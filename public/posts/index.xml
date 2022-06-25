@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on なんとなくブログ</title>
+    <link>https://blog.marufeuille.dev/posts/</link>
+    <description>Recent content in Posts on なんとなくブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>marufeuille</copyright>
+    <lastBuildDate>Sat, 25 Jun 2022 21:17:22 +0900</lastBuildDate><atom:link href="https://blog.marufeuille.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Posts</title>
+      <link>https://blog.marufeuille.dev/posts/first-posts/</link>
+      <pubDate>Sat, 25 Jun 2022 21:17:22 +0900</pubDate>
+      
+      <guid>https://blog.marufeuille.dev/posts/first-posts/</guid>
+      <description>hi there</description>
+    </item>
+    
+  </channel>
+</rss>
