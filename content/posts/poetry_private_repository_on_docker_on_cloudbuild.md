@@ -77,9 +77,9 @@ RUN --mount=type=secret,id=ssh,target=/root/.ssh/id_rsa poetry config virtualenv
 
 ## `docker build`内の`poetry`からプライベートリポジトリを参照できるようにする
 
-これはネット上に色々転がっているのですが、よく出てくる`--ssh`でマウントする方法だと少なくとも私のローカルではうまく行きませんでした。
+これはネット上に色々転がっているのですが、よく出てくる`--ssh`でマウントする方法だと私のローカルではうまくいったものの、cloudbuild側ではうまくいきませんでした。
 
-そこで、同様にBuildkitのドキュメント内を調べていくと[こちら](https://docs.docker.jp/develop/develop-images/build_enhancements.html#new-docker-build-secret-information)にシークレットの私方に関する記載がありましたので、これを利用するようにしました。
+そこで、同様にBuildkitのドキュメント内を調べていくと[こちら](https://docs.docker.jp/develop/develop-images/build_enhancements.html#new-docker-build-secret-information)にシークレットのマウントのやり方に関する記載がありましたので、これを利用するようにしました。
 
 具体的にはまずcloudbuild側(実行側)で
 
