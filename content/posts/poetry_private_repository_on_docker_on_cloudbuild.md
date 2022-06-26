@@ -2,6 +2,7 @@
 title: "CloudBuild内でビルドするコンテナ内のpoetryからプライベートリポジトリを参照する方法"
 date: 2022-06-26T06:23:54+09:00
 draft: false
+tags: [cloudbuild, python, docker]
 ---
 # はじめに
 長いタイトルになってしまいましたが、表題のとおりです笑
