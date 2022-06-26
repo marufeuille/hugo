@@ -88,3 +88,6 @@ weight = 4
   [[params.social]]
     name = "github"
     link = "https://github.com/marufeuille"
+
+[taxonomies]
+  tag = "tags"
