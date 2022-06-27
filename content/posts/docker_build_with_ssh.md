@@ -1,5 +1,5 @@
 ---
-title: "docker_build_with_ssh"
+title: "CloudBuild内でビルドするコンテナ内からプライベートリポジトリを参照する方法"
 date: 2022-06-27T21:51:40+09:00
 draft: false
 tags: [cloudbuild, docker]
@@ -9,7 +9,7 @@ tags: [cloudbuild, docker]
 - [先日](https://blog.marufeuille.dev/posts/poetry_private_repository_on_docker_on_cloudbuild/)、cloudbuild上で`docker build`するときに`--ssh`を渡す方法だとうまく動作しないと書きましたが、再検証したら動いたのでメモします。
 - おそらく、known_hostsを追加していなかったとかそんな感じだと思われます・・・ださい。
 
-ｰ 追検証の体なので、そういう形式で書いていますので、結論だけ知りたい方は最下部に行ってください。
+- 追検証の体なので、そういう形式で書いていますので、結論だけ知りたい方は最下部に行ってください。
 
 ## 検証ログ
 ### on Local
