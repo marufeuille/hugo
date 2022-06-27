@@ -2,17 +2,17 @@
 title: "docker_build_with_ssh"
 date: 2022-06-27T21:51:40+09:00
 draft: false
+tags: [cloudbuild, docker]
 ---
 
 ## 結論
-- 先日、cloudbuild上で`docker build`するときに`--ssh`を渡す方法だとうまく動作しないと書いたが、再検証したら普通に行けた
-- おそらく、known_hostsを追加していなかったとかそんな感じだと思われる
+- [先日](https://blog.marufeuille.dev/posts/poetry_private_repository_on_docker_on_cloudbuild/)、cloudbuild上で`docker build`するときに`--ssh`を渡す方法だとうまく動作しないと書きましたが、再検証したら動いたのでメモします。
+- おそらく、known_hostsを追加していなかったとかそんな感じだと思われます・・・ださい。
 
-- せっかくなので、いかに検証ログを残す
+ｰ 追検証の体なので、そういう形式で書いていますので、結論だけ知りたい方は最下部に行ってください。
 
 ## 検証ログ
-
-まずは純粋にうまく行くローカルバージョンを実行してみます。
+### on Local
 
 適当なプライベートリポジトリ `marufeuille/privare_repository_test` を用意しローカル環境で以下を実行すると問題なくクローンできます（公開鍵は設定済みです）
 
@@ -99,9 +99,9 @@ Identity added: /home/marufeuille/.ssh/id_rsa (marufeuille@penguin)
 
 なんですが、これをそのままcloudbuildに持ち込むと動きませんでした。
 
-## on cloudbuild
+### on cloudbuild
 
-次に、こんな `cloudbuild.yaml` を用意します。
+次に追加でこんな `cloudbuild.yaml` を用意します。
 
 ```
 steps:

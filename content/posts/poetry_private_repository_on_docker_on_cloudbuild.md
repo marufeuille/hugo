@@ -4,6 +4,10 @@ date: 2022-06-26T06:23:54+09:00
 draft: false
 tags: [cloudbuild, python, docker]
 ---
+# 注意事項
+
+その後の検証で `--ssh` オプションでも同等に動作することの検証が取れたので[こちら](https://blog.marufeuille.dev/posts/docker_build_with_ssh/)を参照してください。
+
 # はじめに
 長いタイトルになってしまいましたが、表題のとおりです笑
 
@@ -78,7 +82,9 @@ RUN --mount=type=secret,id=ssh,target=/root/.ssh/id_rsa poetry config virtualenv
 
 ## `docker build`内の`poetry`からプライベートリポジトリを参照できるようにする
 
-これはネット上に色々転がっているのですが、よく出てくる`--ssh`でマウントする方法だと私のローカルではうまくいったものの、cloudbuild側ではうまくいきませんでした。
+~~これはネット上に色々転がっているのですが、よく出てくる`--ssh`でマウントする方法だと私のローカルではうまくいったものの、cloudbuild側ではうまくいきませんでした。~~
+
+2022/06/28追記: できました。[こちら](https://cloud.google.com/build/docs/access-github-from-build)を確認してください。以下はSecretをマウントする方式で実現する場合の手順となります。
 
 そこで、同様にBuildkitのドキュメント内を調べていくと[こちら](https://docs.docker.jp/develop/develop-images/build_enhancements.html#new-docker-build-secret-information)にシークレットのマウントのやり方に関する記載がありましたので、これを利用するようにしました。
 
