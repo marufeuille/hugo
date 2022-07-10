@@ -18,7 +18,7 @@ pytestの書き方をよく忘れるのでまとめておく
 
 Pythonなので、適当なオブジェクトを作ってMockとして呼び出すということも可能だが、管理が面倒なので基本はMagicMockして作れば良い。
 
-```
+```python
 mocked = MagicMock(spec=...)
 ```
 
@@ -26,7 +26,7 @@ mocked = MagicMock(spec=...)
 
 PropertyMockを使えば良い
 
-```
+```python
 from unittest.mock import PropertyMock
 
 from google.cloud import storage
@@ -60,7 +60,7 @@ def test_hoge():
 
 例えば、`hoge/fuga/main.py`で定義されるモジュールがあったときに、以下のようにしてimport 文が書かれていたとする
 
-```
+```python
 from google.cloud import storage
 ```
 
