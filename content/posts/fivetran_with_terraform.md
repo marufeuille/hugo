@@ -1,6 +1,6 @@
 ---
 title: "FivetranをTerraformで構成する方法"
-date: 2022-09-08T22:00:00+09:00
+date: 2022-09-08T21:00:00+09:00
 draft: false
 tags: [fivetran, terraform]
 ---
