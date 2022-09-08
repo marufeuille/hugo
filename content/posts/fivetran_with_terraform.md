@@ -25,7 +25,7 @@ GRANT SELECT, REPLICATION CLIENT, REPLICATION SLAVE ON *.* TO 'fivetran'@'%'
 
 - provider.tf
   - api_key, api_secretはWebUI上から発行しておいてください
-```
+```terraform
 terraform {
   required_providers {
     fivetran = {
@@ -99,7 +99,7 @@ BigQueryユーザをつければOKです。
 
 WebUIにログインすると、CloudSQL周りの接続がおかしいという警告が出ているので再度コネクション編集画面に入り、SAVE&TESTを押下すると以下のような画面が出ますのでCONFIRMする必要があります。
 
-![cloudsql](images/fivetran.png)
+![cloudsql](/images/fivetran.png)
 
 
 これであとは転送がかってに始まります！
