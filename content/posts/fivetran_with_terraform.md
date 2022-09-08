@@ -93,6 +93,10 @@ resource "fivetran_destination" "dest" {
 1. BigQuery用のサービスアカウントの紐付け
 
 今回はfivetranが提供してくれるSAを自GCPプロジェクトのIAMに紐付けました。
+WebUIの左側にあるDestinationsから以下の様に確認が可能です。
+
+![bigquery](/images/bigquery.png)
+
 BigQueryユーザをつければOKです。
 
 2. CloudSQLの証明書の確認
