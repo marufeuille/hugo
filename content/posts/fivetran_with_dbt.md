@@ -40,6 +40,7 @@ fivetran自体のログはWebUIから確認も可能ですが、Datadog, GCP Clo
 
 ### リネージュがソースからdbt内まで追える
 こんな感じでソースからmartまでいい感じに可視化できました。
+(文字等はあとから書き込んでいます)
 
 ![lineage](/images/lineage.png)
 
