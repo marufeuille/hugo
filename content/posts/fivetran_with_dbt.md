@@ -25,7 +25,7 @@ fivetran側でconnector/destinationの設定をして、githubにdbtのコード
 dbtを連携させるとこんな感じでソースからmartまでいい感じに可視化できました。
 (文字等はあとから書き込んでいます)
 
-![lineage](/images/lineage.png)
+![lineage](/images/fivetran/lineage.png)
 
 手軽に使えるのはとても良いですね。
 
@@ -33,7 +33,7 @@ dbtを連携させるとこんな感じでソースからmartまでいい感じ�
 
 ログは以下のようにWeb UI上から確認できます。
 
-![logs](/images/logs.png)
+![logs](/images/fivetran/logs.png)
 
 また、ログの転送設定も可能で、例えば成功時のログは以下のようにjsonで構造化されてcloudlogginから確認できます。
 
@@ -103,6 +103,8 @@ dbtのログさえちゃんと構造化されているので、サクッとメ�
 ```
 
 このあたりは大変ありがたい。。。
+
+ちなみにエラー通知はメールのみっぽいので、Slack通知が欲しかったらこのへんでうまくやることになりそうです。
 
 ## まとめ
 
