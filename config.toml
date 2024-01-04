@@ -1,4 +1,4 @@
-baseURL = "https://blog.marufeuille.dev"
+baseURL = "https://docs.marufeuille.dev"
 languageCode = "ja"
 title = "なんとなくブログ"
 theme = "cactus"
