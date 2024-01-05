@@ -1,7 +1,7 @@
 baseURL = "https://blog.marufeuille.dev"
 languageCode = "ja"
 title = "Caffeine-Fueled Code"
-theme = "cactus"
+theme = "PaperMod"
 copyright = "marufeuille" # cactus will use title if copyright is not set
 disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
 # googleAnalytics = "UA-1234-5"
@@ -54,7 +54,7 @@ weight = 4
   showAllPostsArchive = false # default
 
   # Home page settings
-  description = "たぶんテックブログ的なことを書きます"
+  description = "ITとカフェイン"
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
