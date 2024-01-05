@@ -6,4 +6,4 @@
 
 chatgptにかいてもらいました。
 
-![Alt text](../../static/images/logo.png)
+![Alt text](/images/logo.png)
