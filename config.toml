@@ -1,6 +1,6 @@
 baseURL = "https://blog.marufeuille.dev"
 languageCode = "ja"
-title = "なんとなくブログ"
+title = "Caffeine-Fueled Code"
 theme = "cactus"
 copyright = "marufeuille" # cactus will use title if copyright is not set
 disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
