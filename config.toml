@@ -92,7 +92,6 @@ weight = 4
     name = "github"
     link = "https://github.com/marufeuille"
 
-  defaultTheme = light
 
 [taxonomies]
   tag = "tags"
