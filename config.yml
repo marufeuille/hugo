@@ -1,77 +1,76 @@
-baseurl: "https://blog.marufeuille.dev"  # サイトのベースURL
-languageCode: "ja"
-theme: "stack"
-paginate: 5
-title: "Caffeine-Fueled Code"
-
-
-# 日付フォーマット
+baseURL: https://blog.marufeuille.dev
+languageCode: ja
+title: Caffeine-Fueled Code
+theme: stack
+copyright: marufeuille
+disqusShortname: example
+enableRobotsTXT: true
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Posts
+      url: /posts
+      weight: 2
+    - name: Tags
+      url: /tags
+      weight: 3
+    - name: About
+      url: /about
+      weight: 4
+markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: false
+    noClasses: false
+    style: dracula
+    tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
 params:
+  colortheme: white
+  rss: true
+  googleAnalyticsAsync: true
+  showAllPostsArchive: false
+  description: ITとカフェイン
+  mainSection: posts
+  showAllPostsOnHomePage: false
+  postsOnHomePage: 5
+  tagsOverview: true
+  showProjectsList: false
+  projectsUrl: https://github.com/gohugoio
+  mainSectionTitle: Posts
+  logo: images/logo.png
   mainSections:
     - post
   featuredImageField: image
   rssFullContent: true
-  
-  footer:
-    since: 2023  # フッターに表示される開始年
-  
-  dateFormat:
-    published: "2006-01-02"
-    lastUpdated: "2006-01-02"
-  
-  sidebar:
-    emoji: 🍥
-    subtitle: 日々のコーディングとカフェイン
-    avatar:
-      enabled: true
-      local: true
-      src: img/avatar.png  # content/img/avatar.png に画像を配置
-  
-  article:
-    math: false
-    toc: true
-    readingTime: true
-  
-  # OpenGraphやTwitterカードの設定
-  opengraph:
-    twitter:
-      # あなたのTwitter名（@を除く）
-      site: ""
-      card: summary_large_image
-
-  defaultImage:
-    opengraph:
-      enabled: false
-      local: false
-      src: ""
-
-  colorScheme:
-    # デフォルトのカラーモード: auto, light, dark
-    toggle: true
-    default: auto
-
-  widgets:
-    homepage:
-      - type: search
-      - type: archives
-        params:
-          limit: 5
-      - type: categories
-        params:
-          limit: 10
-      - type: tag-cloud
-        params:
-          limit: 10
-    
-    page:
-      - type: toc
-
-# Hugoのマークアップ設定
-markup:
-  goldmark:
-    renderer:
-      unsafe: true  # HTML in Markdownを許可
-  highlight:
-    noClasses: false
-    lineNos: true
-    style: monokai
+  dateFormat: 2006-01-02
+  show_updated: true
+  showReadTime: true
+  comments:
+    enabled: false
+    engine: cactus_comments
+    utterances:
+      repo: <github_username>/<github_reponame>
+      label: hugo-site-name
+      theme: github-light
+    cactuscomments:
+      siteName: your_cactus_comments_sitename
+  social:
+    - name: github
+      link: https://github.com/marufeuille
+  assets:
+    disableHLJS: true
+taxonomies:
+  tag: tags
