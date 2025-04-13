@@ -4,13 +4,6 @@ theme: "stack"
 paginate: 5
 title: "Caffeine-Fueled Code"
 
-# 言語設定
-languages:
-  ja:
-    languageName: Japanese
-    title: Caffeine-Fueled Code
-    weight: 1
-
 # 日付フォーマット
 params:
   mainSections:
@@ -27,7 +20,7 @@ params:
   
   sidebar:
     emoji: 🍥
-    subtitle: ブログの説明文
+    subtitle: 日々のコーディングとカフェイン
     avatar:
       enabled: true
       local: true
@@ -38,13 +31,6 @@ params:
     toc: true
     readingTime: true
   
-  # OpenGraphやTwitterカードの設定
-  opengraph:
-    twitter:
-      # あなたのTwitter名（@を除く）
-      site: ""
-      card: summary_large_image
-
   defaultImage:
     opengraph:
       enabled: false
