@@ -1,7 +1,7 @@
 baseURL = "https://blog.marufeuille.dev"
 languageCode = "ja"
 title = "Caffeine-Fueled Code"
-theme = "PaperMod"
+theme = "Stack"
 copyright = "marufeuille" # cactus will use title if copyright is not set
 disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
 # googleAnalytics = "UA-1234-5"
@@ -66,6 +66,11 @@ weight = 4
   projectsUrl = "https://github.com/gohugoio" # title link for projects list
   mainSectionTitle = "Posts"
   logo = "images/logo.png"
+  
+  # 基本設定
+  mainSections = ["post"]
+  featuredImageField = "image"
+  rssFullContent = true
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
