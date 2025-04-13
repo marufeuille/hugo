@@ -3,8 +3,12 @@ languageCode: ja
 title: Caffeine-Fueled Code
 theme: stack
 copyright: marufeuille
-disqusShortname: example
 enableRobotsTXT: true
+
+services:
+  disqus:
+    shortname: example
+
 menu:
   main:
     - name: Home
@@ -19,6 +23,7 @@ menu:
     - name: About
       url: /about
       weight: 4
+
 markup:
   tableOfContents:
     endLevel: 4
@@ -37,41 +42,45 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
 params:
-  colortheme: white
-  rss: true
-  googleAnalyticsAsync: true
-  showAllPostsArchive: false
-  description: ITとカフェイン
-  mainSection: posts
-  showAllPostsOnHomePage: false
-  postsOnHomePage: 5
-  tagsOverview: true
-  showProjectsList: false
-  projectsUrl: https://github.com/gohugoio
-  mainSectionTitle: Posts
-  logo: images/logo.png
   mainSections:
-    - post
+    - posts
   featuredImageField: image
   rssFullContent: true
-  dateFormat: 
-    published: 2006-01-02
-    lastUpdated: 2006-01-02 15:04:05
-  show_updated: true
-  showReadTime: true
+  description: ITとカフェイン
+  dateFormat:
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02 15:04 MST"
+  opengraph:
+    twitter:
+      site: ""
+      card: summary_large_image
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: false
+      src: ""
+  article:
+    math: false
+    toc: true
+    readingTime: true
   comments:
     enabled: false
-    engine: cactus_comments
+    provider: cactus_comments
     utterances:
-      repo: <github_username>/<github_reponame>
+      repo: "<github_username>/<github_reponame>"
       label: hugo-site-name
       theme: github-light
     cactuscomments:
       siteName: your_cactus_comments_sitename
-  social:
-    - name: github
-      link: https://github.com/marufeuille
+  menu:
+    social:
+      - identifier: github
+        name: GitHub
+        url: https://github.com/marufeuille
+        params:
+          icon: brand-github
   assets:
     disableHLJS: true
 
