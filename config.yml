@@ -55,7 +55,9 @@ params:
     - post
   featuredImageField: image
   rssFullContent: true
-  dateFormat: 2006-01-02
+  dateFormat: 
+    published: 2006-01-02
+    lastUpdated: 2006-01-02 15:04:05
   show_updated: true
   showReadTime: true
   comments:
@@ -72,5 +74,6 @@ params:
       link: https://github.com/marufeuille
   assets:
     disableHLJS: true
+
 taxonomies:
   tag: tags
