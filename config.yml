@@ -4,6 +4,7 @@ theme: "stack"
 paginate: 5
 title: "Caffeine-Fueled Code"
 
+
 # 日付フォーマット
 params:
   mainSections:
@@ -31,6 +32,13 @@ params:
     toc: true
     readingTime: true
   
+  # OpenGraphやTwitterカードの設定
+  opengraph:
+    twitter:
+      # あなたのTwitter名（@を除く）
+      site: ""
+      card: summary_large_image
+
   defaultImage:
     opengraph:
       enabled: false
