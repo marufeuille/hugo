@@ -1,8 +1,8 @@
-{{ if eq .Language "mermaid" }}
+{{ if eq (.Get "language") "mermaid" }}
   {{ .Page.Store.Set "hasMermaid" true }}
   <div class="mermaid">
     {{- .Inner | safeHTML }}
   </div>
 {{ else }}
-  <pre><code class="language-{{ .Language }}" data-lang="{{ .Language }}">{{ .Inner }}</code></pre>
+  <pre><code class="language-{{ .Get "language" }}" data-lang="{{ .Get "language" }}">{{ .Inner }}</code></pre>
 {{ end }}
