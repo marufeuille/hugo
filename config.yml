@@ -1,14 +1,14 @@
-baseurl: "/"  # サイトのベースURL
-languageCode: "ja-jp"
+baseurl: "https://blog.marufeuille.dev"  # サイトのベースURL
+languageCode: "ja"
 theme: "stack"
 paginate: 5
-title: "あなたのサイト名"
+title: "Caffeine-Fueled Code"
 
 # 言語設定
 languages:
   ja:
     languageName: Japanese
-    title: あなたのサイト名
+    title: Caffeine-Fueled Code
     weight: 1
 
 # 日付フォーマット
