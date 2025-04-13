@@ -48,6 +48,8 @@ weight = 4
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    noClasses = false
 
 [params]
 
@@ -91,6 +93,8 @@ weight = 4
   [[params.social]]
     name = "github"
     link = "https://github.com/marufeuille"
+  [[params.assets]]
+    disableHLJS = true
 
 
 [taxonomies]
