@@ -42,14 +42,12 @@ weight = 4
     lineNoStart = 1
     lineNos = true
     lineNumbersInTable = false
-    noClasses = true
+    noClasses = false
     style = "dracula"
     tabWidth = 4
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.highlight]
-    noClasses = false
 
 [params]
 
