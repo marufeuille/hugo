@@ -15,7 +15,7 @@ RAG などを自分で構築しようとしてもデータがないのはまあ�
 
 スクレイピングは概ね以下のようなプロセスで実行されます。
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 %% データストアの定義
 urlDB[(対象 URL リスト)]:::datastore
@@ -40,8 +40,7 @@ resultDB[(取得済みデータ)]:::datastore
     classDef process fill:#bbf,stroke:#33f,stroke-width:1px
     classDef downloader fill:#ffb,stroke:#b90,stroke-width:2px
     classDef external fill:#dfd,stroke:#060,stroke-width:2px,stroke-dasharray: 5 2
-
-{{< /mermaid >}}
+```
 
 非常にシンプルなのですが、難しさとしては以下のようなものが挙げられるかと思います
 
@@ -69,7 +68,7 @@ resultDB[(取得済みデータ)]:::datastore
 
 図にすると以下のような分布です。
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
 %% データストアの定義
 urlDB[(対象 URL リスト)]:::datastore
@@ -98,8 +97,7 @@ resultDB[(取得済みデータ)]:::datastore
     classDef process fill:#bbf,stroke:#33f,stroke-width:1px
     classDef downloader fill:#ffb,stroke:#b90,stroke-width:2px
     classDef external fill:#dfd,stroke:#060,stroke-width:2px,stroke-dasharray: 5 2
-
-{{< /mermaid >}}
+```
 
 # Zyte 入門
 
