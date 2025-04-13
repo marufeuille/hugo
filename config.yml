@@ -1,17 +1,83 @@
-theme: stack
+baseurl: "/"  # サイトのベースURL
+languageCode: "ja-jp"
+theme: "stack"
+paginate: 5
+title: "あなたのサイト名"
 
+# 言語設定
+languages:
+  ja:
+    languageName: Japanese
+    title: あなたのサイト名
+    weight: 1
+
+# 日付フォーマット
 params:
   mainSections:
     - post
   featuredImageField: image
   rssFullContent: true
+  
+  footer:
+    since: 2023  # フッターに表示される開始年
+  
   dateFormat:
-    published: "Jan 02, 2006"
-    lastUpdated: "Jan 02, 2006 15:04 MST"
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02"
+  
+  sidebar:
+    emoji: 🍥
+    subtitle: ブログの説明文
+    avatar:
+      enabled: true
+      local: true
+      src: img/avatar.png  # content/img/avatar.png に画像を配置
+  
+  article:
+    math: false
+    toc: true
+    readingTime: true
+  
+  # OpenGraphやTwitterカードの設定
+  opengraph:
+    twitter:
+      # あなたのTwitter名（@を除く）
+      site: ""
+      card: summary_large_image
 
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: false
+      src: ""
+
+  colorScheme:
+    # デフォルトのカラーモード: auto, light, dark
+    toggle: true
+    default: auto
+
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 10
+    
+    page:
+      - type: toc
+
+# Hugoのマークアップ設定
 markup:
-  highlight:
-    noClasses: false
   goldmark:
     renderer:
-      unsafe: true
+      unsafe: true  # HTML in Markdownを許可
+  highlight:
+    noClasses: false
+    lineNos: true
+    style: monokai
