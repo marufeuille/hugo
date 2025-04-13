@@ -91,7 +91,7 @@ weight = 4
   [[params.social]]
     name = "github"
     link = "https://github.com/marufeuille"
-  [[params.assets]]
+  [params.assets]
     disableHLJS = true
 
 
