@@ -15,11 +15,11 @@ RAG などを自分で構築しようとしてもデータがないのはまあ�
 
 スクレイピングは概ね以下のようなプロセスで実行されます。
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
-    %% データストアの定義
-    urlDB[(対象URLリスト)]:::datastore
-    resultDB[(取得済みデータ)]:::datastore
+%% データストアの定義
+urlDB[(対象 URL リスト)]:::datastore
+resultDB[(取得済みデータ)]:::datastore
 
     %% 処理の定義
     downloader{{ダウンローダー}}:::downloader
@@ -40,7 +40,8 @@ flowchart LR
     classDef process fill:#bbf,stroke:#33f,stroke-width:1px
     classDef downloader fill:#ffb,stroke:#b90,stroke-width:2px
     classDef external fill:#dfd,stroke:#060,stroke-width:2px,stroke-dasharray: 5 2
-```
+
+{{< /mermaid >}}
 
 非常にシンプルなのですが、難しさとしては以下のようなものが挙げられるかと思います
 
@@ -68,11 +69,11 @@ flowchart LR
 
 図にすると以下のような分布です。
 
-```mermaid
+{{< mermaid >}}
 flowchart LR
-    %% データストアの定義
-    urlDB[(対象URLリスト)]:::datastore
-    resultDB[(取得済みデータ)]:::datastore
+%% データストアの定義
+urlDB[(対象 URL リスト)]:::datastore
+resultDB[(取得済みデータ)]:::datastore
 
     %% 処理の定義
     downloader{{ダウンローダー}}:::downloader
@@ -84,10 +85,10 @@ flowchart LR
 
     %% データフロー
     subgraph ScrapyCloud
-	    urlDB -->|HTTP Request| downloader
-	    downloader -->|HTTP Response| parser
-	    parser -->|抽出データ, 保存| resultDB
-	    parser -.->|新規URL発見| urlDB
+        urlDB -->|HTTP Request| downloader
+        downloader -->|HTTP Response| parser
+        parser -->|抽出データ, 保存| resultDB
+        parser -.->|新規URL発見| urlDB
     end
     downloader <--> |通信| zyteapi
     zyteapi <--> |通信| internet
@@ -97,7 +98,8 @@ flowchart LR
     classDef process fill:#bbf,stroke:#33f,stroke-width:1px
     classDef downloader fill:#ffb,stroke:#b90,stroke-width:2px
     classDef external fill:#dfd,stroke:#060,stroke-width:2px,stroke-dasharray: 5 2
-```
+
+{{< /mermaid >}}
 
 # Zyte 入門
 
